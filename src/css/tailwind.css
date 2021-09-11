@@ -3,3 +3,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+p {
+	@apply my-8;
+}
+
+h1 {
+        @apply text-4xl;
+}
+
+@screen lg {
+        h1{@apply text-6xl;}
+}

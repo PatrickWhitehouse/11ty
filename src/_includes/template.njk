@@ -12,9 +12,10 @@
         <body
                 class="min-h-screen dark:bg-gray-900 dark:text-white font-sans p-8 text-xl lg:p-16 lg:text-2xl leading-relaxed">
                 {% include "header.njk" %}
-                <main class="my-12 lg:my-20">
+                <main class="container my-12 lg:my-20">
                         {{content | safe}}
                 </main>
+                <script src="{{ "/assets/script.js" | url }}"></script>
         </body>
 
 </html>

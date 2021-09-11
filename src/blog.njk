@@ -9,7 +9,7 @@ title: Blog
         <ul class="grid gap-4 lg:grid-cols-2">
                 {%- for post in collections.post -%}
                 <li
-                        class="flex justify-center items-center bg-gray-900 text-white py-16 px-8 hover:shadow-xl cursor-pointer transition-shadow dark:bg-white dark:text-gray-900">
+                        class="flex justify-center items-center bg-gray-900 text-white py-16 px-8 hover:shadow-xl cursor-pointer transition-shadow text-center font-medium dark:bg-white dark:text-gray-900">
                         <a href="{{ post.url }}">{{ post.data.title }}</a>
                 </li>
                 {%- endfor -%}

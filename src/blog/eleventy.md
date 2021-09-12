@@ -2,6 +2,7 @@
 tags: post
 title: Using Eleventy (11ty) to create this site
 layout: "template.njk"
+description: Blog post about the advantage of using 11ty to create a rapid static site
 ---
 
 # {{title}}

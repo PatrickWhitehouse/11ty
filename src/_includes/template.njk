@@ -5,16 +5,18 @@
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="{{description}}">
                 <title>{{title}} - Patrick Whitehouse</title>
                 <link rel="stylesheet" href="/css/styles.css">
         </head>
 
         <body
-                class="min-h-screen dark:bg-gray-900 dark:text-white font-sans p-8 text-xl lg:p-16 lg:text-2xl leading-relaxed">
+                class="min-h-screen dark:bg-gray-900 dark:text-white font-sans px-8 pt-8 text-xl lg:px-16 lg:pt-16 lg:text-2xl leading-relaxed">
                 {% include "header.njk" %}
                 <main class="container my-12 lg:my-20">
                         {{content | safe}}
                 </main>
+                {% include "footer.njk" %}
                 <script src="{{ "/assets/script.js" | url }}"></script>
         </body>
 

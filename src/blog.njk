@@ -7,11 +7,11 @@ description: Blog posts about web development, tech and life by Patrick Whitehou
 <p>I'm not the best story teller in the world if I'm honest, but I've given it a go by writing some blog
         posts.</p>
 <div class="my-5">
-        <ul class="grid gap-4 lg:grid-cols-2">
+        <ul class="grid gap-8 lg:grid-cols-2">
                 {%- for post in collections.post -%}
-                <li
-                        class="flex justify-center items-center bg-gray-900 text-white py-16 px-8 hover:shadow-xl cursor-pointer transition-shadow text-center font-medium dark:bg-white dark:text-gray-900">
-                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                <li class="relative">
+                        <div class="absolute filter -inset-0.5 opacity-75 blur-md bg-gradient-to-r from-{{post.data.from}}-600 to-{{post.data.to}}-600 rounded-lg"></div>
+                        <a href="{{ post.url }}" class="relative flex justify-center items-center bg-gray-900 text-white py-16 px-8 cursor-pointer text-center font-medium dark:bg-white dark:text-gray-900">{{ post.data.title }}</a>
                 </li>
                 {%- endfor -%}
         </ul>

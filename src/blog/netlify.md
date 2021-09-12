@@ -3,6 +3,8 @@ tags: post
 title: Deploying with Netlify
 layout: "template.njk"
 description: Blog post about how Netlify was used to deploy this site
+from: purple
+to: red
 ---
 
 # Deploying with Netlify

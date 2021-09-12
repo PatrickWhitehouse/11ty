@@ -15,3 +15,7 @@ h1 {
 @screen lg {
         h1{@apply text-6xl;}
 }
+
+p > a{
+        @apply italic underline text-blue-500;
+}

@@ -4,8 +4,8 @@
 	"description": "Built from JET Starter",
 	"scripts": {
 		"clean": "rimraf public src/css/styles.css",
-		"dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
-		"build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy"
+		"dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && rollup -c -w && eleventy --serve",
+		"build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy"
 	},
 	"repository": {
 		"type": "git",
@@ -28,6 +28,7 @@
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",
 		"rimraf": "^3.0.2",
+		"rollup": "^2.56.3",
 		"tailwindcss": "^2.2.10"
 	},
 	"dependencies": {

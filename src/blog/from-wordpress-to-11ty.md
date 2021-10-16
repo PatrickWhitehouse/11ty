@@ -7,5 +7,4 @@ date: 2021-10-16
 ---
 
 # Migrating an existing clients site from WordPress to 11ty
-
-To be continued...
+## First question, why?

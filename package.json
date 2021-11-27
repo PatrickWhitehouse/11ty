@@ -6,7 +6,8 @@
 		"clean": "rimraf public src/css/styles.css",
 		"dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
 		"dev:js": "rollup -c -w",
-		"build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy"
+		"build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy",
+		"prepare": "husky install"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +27,8 @@
 		"@11ty/eleventy": "^0.12.1",
 		"autoprefixer": "^10.3.4",
 		"cssnano": "^5.0.8",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.1.2",
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",
 		"rimraf": "^3.0.2",

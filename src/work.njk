@@ -7,5 +7,9 @@ description: A showcase of projects, both client and personal.
 <p>Below are some examples of my work I've had the pleasure of being apart of.</p>
 <p>They're a selection of both client projects and personal projects that have helped expand my knowledge.</p>
 <div class="my-5">
-
+    <ul>
+        {%- for project in projects -%}
+        <li>{{ project.url }}</li>
+        {%- endfor -%}
+    </ul>
 </div>

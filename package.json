@@ -8,7 +8,7 @@
     "dev:js": "rollup -c -w",
     "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy",
     "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write ./src"
   },
   "repository": {
     "type": "git",

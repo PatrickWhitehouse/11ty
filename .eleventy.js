@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/blog/img");
+  eleventyConfig.addPassthroughCopy("./src/case-studies/**/*.png");
   eleventyConfig.addPassthroughCopy("./src/js/app.js");
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Patrick Whitehouse, front end developer based in Derbyshire, UK",

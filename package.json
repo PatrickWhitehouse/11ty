@@ -26,6 +26,7 @@
   "homepage": "https://github.com/PatrickWhitehouse/11ty",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0",
     "autoprefixer": "^10.3.4",
     "cssnano": "^5.0.8",
     "husky": "^7.0.4",

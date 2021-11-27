@@ -6,7 +6,6 @@ async function imageShortcode(src, alt, sizes) {
     widths: [500, 1280],
     outputDir: './public/img'
   });
-  console.log(src)
 
   let imageAttributes = {
     alt,

@@ -8,7 +8,7 @@ description: A showcase of projects, both client and personal.
 <p>They're a selection of both client projects and personal projects that have helped expand my knowledge.</p>
 <div class="my-5">
         {%- for project in projects.projects -%}
-        <article>
+        <article class="flex flex-col">
             <span>{{ project.title }}</span>
             <a href={{project.internalUrl}}>View case study</a>
         </article>

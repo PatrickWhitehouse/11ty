@@ -1,41 +1,43 @@
 {
-	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "Built from JET Starter",
-	"scripts": {
-		"clean": "rimraf public src/css/styles.css",
-		"dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
-		"dev:js": "rollup -c -w",
-		"build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy",
-		"prepare": "husky install"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/PatrickWhitehouse/11ty.git"
-	},
-	"keywords": [
-		"eleventy",
-		"11ty",
-		"tailwind",
-		"tailwindcss",
-		"purgecss"
-	],
-	"author": "Patrick Whitehouse",
-	"license": "ISC",
-	"homepage": "https://github.com/PatrickWhitehouse/11ty",
-	"devDependencies": {
-		"@11ty/eleventy": "^0.12.1",
-		"autoprefixer": "^10.3.4",
-		"cssnano": "^5.0.8",
-		"husky": "^7.0.4",
-		"lint-staged": "^12.1.2",
-		"postcss": "^8.3.6",
-		"postcss-cli": "^8.3.1",
-		"rimraf": "^3.0.2",
-		"rollup": "^2.56.3",
-		"tailwindcss": "^2.2.10"
-	},
-	"dependencies": {
-		"eleventy-plugin-seo": "^0.5.2"
-	}
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Built from JET Starter",
+  "scripts": {
+    "clean": "rimraf public src/css/styles.css",
+    "dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
+    "dev:js": "rollup -c -w",
+    "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && rollup -c && eleventy",
+    "prepare": "husky install",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickWhitehouse/11ty.git"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "tailwind",
+    "tailwindcss",
+    "purgecss"
+  ],
+  "author": "Patrick Whitehouse",
+  "license": "ISC",
+  "homepage": "https://github.com/PatrickWhitehouse/11ty",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.4",
+    "cssnano": "^5.0.8",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.3",
+    "tailwindcss": "^2.2.10"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2"
+  }
 }

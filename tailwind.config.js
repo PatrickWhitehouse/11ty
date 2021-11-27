@@ -1,11 +1,11 @@
 module.exports = {
   purge: {
-    content: ['./src/**/*.njk']
+    content: ["./src/**/*.njk"],
   },
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
-}
+};

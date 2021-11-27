@@ -5,17 +5,19 @@
 @tailwind utilities;
 
 p {
-	@apply my-8;
+  @apply my-8;
 }
 
 h1 {
-        @apply text-4xl;
+  @apply text-4xl;
 }
 
 @screen lg {
-        h1{@apply text-6xl;}
+  h1 {
+    @apply text-6xl;
+  }
 }
 
-p > a{
-        @apply italic underline text-blue-500;
+p > a {
+  @apply italic underline text-blue-500;
 }

@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run format || (
+    echo 'Failed to make it pretty!'
+    return false;
+)
+
+echo 'All ran my guy.'

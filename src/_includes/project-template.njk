@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="icon" href="/img/favicon.svg">
+                <link rel="stylesheet" href="/css/styles.css">
+                {% seo "" %}
+        </head>
+
+        <body
+                class="min-h-screen dark:bg-gray-900 dark:text-white font-sans px-8 pt-16 text-xl lg:px-16 lg:text-2xl leading-relaxed">
+                {% include "header.njk" %}
+                <main class="container mx-auto my-12 lg:my-20">
+                        <div class="flex flex-col case-study-grid gap-12">
+                                <div class="my-5 order-2 lg:order-1">
+                                        {{content | safe}}
+                                        <a target="_blank" href={{details.url}}>Visit the site &rarr;</a>
+                                </div>
+                                <div
+                                        class="order-1 lg:order-2 my-5 py-8 px-10 lg:sticky lg:top-8 rounded-md bg-blue-200 inline-block text-lg max-w-prose font-medium filter drop-shadow-sm text-black">
+                                        <ul>
+                                                <li class="my-2">
+                                                        <span>Problem:</span>
+                                                        <span>{{details.problem}}</span>
+                                                </li>
+                                                <li class="my-2">
+                                                        <span>Solution:</span>
+                                                        <span>{{details.solution}}</span>
+                                                </li>
+                                                <li class="my-2">
+                                                        <span>Results:</span>
+                                                        <span>{{details.results}}</span>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                </main>
+                {% include "footer.njk" %}
+        </body>
+
+</html>

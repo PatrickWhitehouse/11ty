@@ -18,7 +18,7 @@ h1 {
   }
   .case-study-grid {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 33%;
     align-items: flex-start;
   }
 }

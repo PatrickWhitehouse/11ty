@@ -6,11 +6,15 @@ description: A showcase of projects, both client and personal.
 <h1 class="mb-5">Work</h1>
 <p>Below are some examples of my work I've had the pleasure of being apart of.</p>
 <p>They're a selection of both client projects and personal projects that have helped expand my knowledge.</p>
-<div class="my-5">
+<div class="my-5 grid lg:grid-cols-3 gap-6">
         {%- for project in projects.projects -%}
-        <article class="flex flex-col">
-            <span>{{ project.title }}</span>
-            <a href={{project.internalUrl}}>View case study</a>
+        <article class="flex flex-col text-base text-center">
+            {% image project.image, "", "Maid About Town homepage screenshot",
+            "(min-width: 1024px) 500px, 100vw" %}
+            <span class="mt-5 font-semibold underline">{{ project.title }}</span>
+            <span class="mt-5">{{project.description}}</span>
+            <span class="mt-5">Tech stack: {{project.stack}}</span>
+            <a href={{project.internalUrl}} class="mt-5">View case study &rarr;</a>
         </article>
         {%- endfor -%}
 </div>

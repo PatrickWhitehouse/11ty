@@ -1,13 +1,14 @@
 const pluginSEO = require("eleventy-plugin-seo");
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, sizes) {
+async function imageShortcode(src, cls, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [500, 1280],
-    outputDir: './public/img'
+    widths: [500, 768, 1280],
+    outputDir: "./public/img",
   });
 
   let imageAttributes = {
+    class: cls,
     alt,
     sizes,
     loading: "lazy",

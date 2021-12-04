@@ -2,9 +2,9 @@
   {
     "title": "Maid About Town",
     "stack": "html, css, js",
-    "description": "lorem",
+    "description": "Check out how a basic static site transformed Claires business.",
     "externalUrl": "https://maidabouttown.cleaning",
     "internalUrl": "/case-studies/maid-about-town",
-    "image": "./"
+    "image": "./src/case-studies/maid-about-town/screenshot.png"
   }
 ]

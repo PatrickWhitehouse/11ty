@@ -7,15 +7,13 @@ description: Blog posts about web development, tech and life by Patrick Whitehou
 <p>I'm not the best story teller in the world if I'm honest, but I've given it a go by writing some blog
         posts about the tech I'm currently learning, or random events that have happened in my life.</p>
 <div class="my-5">
-        <ul class="grid gap-8 lg:grid-cols-2">
+        <span class="mb-5 inline-block">Posts:</span>
+        <ul>
                 {%- for post in collections.post -%}
-                <li class="relative">
-                        <div class="absolute filter -inset-0.5 opacity-75 blur-md bg-gradient-to-r from-pink-600 to-yellow-600 rounded-lg"></div>
-                        <div class="relative flex flex-col justify-center items-center bg-gray-900 text-white py-16 px-8 text-center font-medium rounded-lg dark:bg-gray-800">
-                                <a href="{{ post.url }}" class="cursor-pointer">{{ post.data.title }}</a>
-                                <small class="mt-5">Published on: {{ post.date.toLocaleDateString('en-GB') }}</small>
-                        </div>
-
+                <li class="relative mb-5">
+                                <a href="{{ post.url }}" class="cursor-pointer">{{ post.data.title }}</a> - 
+                                <small class="mt-5 text-sm italic">Published on: {{ post.date.toLocaleDateString('en-GB') }}</small>
+                        
                 </li>
                 {%- endfor -%}
         </ul>

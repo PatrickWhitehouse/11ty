@@ -7,7 +7,7 @@ description: A showcase of projects, both client and personal.
 <p>Below are some examples of my work I've had the pleasure of being apart of.</p>
 <p>They're a selection of both client projects and personal projects that have helped expand my knowledge.</p>
 <div class="my-5 grid lg:grid-cols-3 gap-6">
-        {%- for project in projects.projects -%}
+        {%- for project in projects -%}
         <article class="flex flex-col text-base text-center">
             {% image project.image, "", "Maid About Town homepage screenshot",
             "(min-width: 1024px) 500px, 100vw" %}

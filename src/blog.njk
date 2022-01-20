@@ -9,7 +9,7 @@ description: Blog posts about web development, tech and life by Patrick Whitehou
 <div class="my-5">
         <span class="mb-5 inline-block">Posts:</span>
         <ul>
-                {%- for post in collections.post -%}
+                {%- for post in collections.post | reverse -%}
                 <li class="relative mb-5">
                                 <a href="{{ post.url }}" class="cursor-pointer">{{ post.data.title }}</a> - 
                                 <small class="mt-5 text-sm italic">Published on: {{ post.date.toLocaleDateString('en-GB') }}</small>

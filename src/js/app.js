@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const randomMessages = [
   "Stop looking in my console.",

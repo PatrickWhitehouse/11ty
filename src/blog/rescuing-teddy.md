@@ -18,3 +18,10 @@ On the flip side, this allowed us to save some extra cash in preparation for our
 </figure>
 
 A month into living here, we both decided the house would feel better with a **little** companion. We're both huge dog lovers and we have both grown up with dogs being apart of the household and family.
+
+I've always wanted a Whippet, and my girlfriend has always wanted a Staffordshire Bull Terrier. Like everything else during COVID, the price of buying a puppy was obscene. We decided to scout the local dogs homes online, and we came across Teddy, a 10 month old Staffordshire Bull Terrier cross with a Greyhound, aka a Lurcher. We fell in love with him straight away! He's been with us over a year now, and he truly is mans best friend.
+
+<figure class="text-center">
+        <img src="../img/teddy.jpg" width="400" height="400" alt="Teddy" class="mx-auto">
+        <figcaption class="text-xs italic">Teddy</figcaption>
+</figure>
